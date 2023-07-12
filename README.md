@@ -18,14 +18,16 @@
 
 ## Lazygit install *for git*
 1. Get last version
-    - LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
-2. Download
+\   
+     - LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
+\
+3. Download
     - curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
-3. Unpack
+4. Unpack
     - tar xf lazygit.tar.gz lazygit
-4. Build
+5. Build
     - sudo install lazygit /usr/local/bin
-5. Remove archive and bin file
+6. Remove archive and bin file
     - rm lazygit.tar.gz lazygit
 
 ---

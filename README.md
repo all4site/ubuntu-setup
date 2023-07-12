@@ -123,5 +123,5 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ```
 ##### zoxide
 ```
-apt install zoxide
+sudo apt install -y zoxide && exec zsh
 ```

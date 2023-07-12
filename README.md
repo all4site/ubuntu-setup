@@ -91,38 +91,38 @@ sudo apt install tmux
 
 ## Step two - setting
 ### Copy ssh key :heavy_check_mark:
-```
+```bash
 cd .ssh
 ```
-```
+```bash
 chmod 600 id_rsa
 ```
 ### Clone git rep with setup :heavy_check_mark:
-```
+```bash
 git clone git@github.com:all4site/ubuntu-setup.git ~/.my-ubuntu-setup && chmod u+x removeallnvim.sh resetnvim.sh
 ```
 ### Copy zsh setup :heavy_check_mark:
-```
+```bash
 cp ~/.my-ubuntu-setu/.zshrc .zshrc
 ```
 ### Install oh-my-zsh plugins :heavy_check_mark:
 ##### powerlevel10k/powerlevel10k
-```
+```bash
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k && exec zsh
 ```
-```
+```bash
  cp ~/.my-ubuntu-setu/.p10k.zsh .p10k.zsh && exec zsh
 ```
 ##### zsh-syntax-highlighting
-```
+```bash
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting && exec zsh
 ```
 ##### zsh-autosuggestions
-```
+```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions && exec zsh
 ```
 ##### zoxide
-```
+```bash
 sudo apt install -y zoxide && exec zsh
 ```
 ### Tmux setup :heavy_check_mark:
@@ -131,11 +131,11 @@ sudo apt install -y zoxide && exec zsh
 
 :bangbang: To attach the last session use tm insted tmux :bangbang:
 ##### Copy Tmux config
-```
+```bash
 cp ~/.my-ubuntu-setu/.tmux.conf ~/.tmux.conf
 ```
 ##### Tmux Plugin Manager
-```
+```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
@@ -149,13 +149,13 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 :recycle:Use vi for start nvim:recycle:
 
 ### Install
-```
+```bash
 wget https://github.com/neovim/neovim/releases/download/stable/nvim.appimage && sudo apt install fuse gcc ripgrep
 ```
-```
+```bash
 sudo cp nvim.appimage /usr/bin/nvim && chmod u+x /usr/bin/nvim
 ```
 ### Get configuration
-```
+```bash
 git clone git@github.com:all4site/myneovim.git ~/.config/nvim
 ```

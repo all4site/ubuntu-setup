@@ -130,6 +130,6 @@ sudo apt install -y zoxide && exec zsh
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
-:exclamation: Press Ctr-a-U to update tmux configuration :exclamation:
+:exclamation: Press Ctr-a+U and Ctr-a+I to update tmux configuration :exclamation:
 
 :bangbang: To attach the last session use tm insted tmux :bangbang:

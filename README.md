@@ -44,50 +44,71 @@ rm lazygit.tar.gz lazygit
 ```
 ---
 
-## Bottom install *tack manager*
-#### Get last version
+### Bottom install *tack manager*
+##### Get last version
 ```bash
 BOTTOM_VERSION=$(curl -s "https://api.github.com/repos/ClementTsang/bottom/releases/latest" | grep -Po '"tag_name": "\K[0-9.]+')
 ```
-#### Download
+##### Download
 ```bash
 curl -Lo bottom.deb "https://github.com/ClementTsang/bottom/releases/latest/download/bottom_${BOTTOM_VERSION}_amd64.deb"
 ```
-#### Install
+##### Install
 ```bash
 sudo apt install -y ./bottom.deb
 ```
-#### Remove install file
+##### Remove install file
 ```bash
 rm -rf bottom.deb
 ```
 ---
 
-## Exa install *change for ls*
+### Exa install *change for ls*
 ```bash
 sudo apt -y install exa
 ```
 ---
 
-## Fd install *change for find*
-#### Download
+### Fd install *change for find*
+##### Download
 ```bash
 wget https://github.com/sharkdp/fd/releases/download/v7.3.0/fd-musl_7.3.0_amd64.deb
 ```
-#### Install
+##### Install
 ```bash
 sudo apt install -y ./fd-musl_7.3.0_amd64.deb
 ```
-#### Remove install file
+##### Remove install file
 ```bash
 rm -rf fd-musl_7.3.0_amd64.debb
 ```
 ---
 
-## Tmux install
+### Tmux install
 ```bash
 sudo apt install tmux
 ```
 
-##Need to install
+## Step two - setting
+### Copy ssh key
+```
+cd .ssh
+```
+```
+chmod 600 id_rsa
+```
+### Clone git rep with setup
+```
+git clone git@github.com:all4site/ubuntu-setup.git temp
+```
+### Copy zsh setup
+```
+cp temp/.zshrc .zshrc
+```
+### Install oh-my-zsh plugins
+##### 'powerlevel10k/powerlevel10k
+```
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```
+
 

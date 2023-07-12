@@ -142,6 +142,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 :exclamation:If you need RESET nvim config use restnvim.sh in .config/nvim/scripts :exclamation:
 
 :exclamation:If you need REMOVE nvim config use removeallvim.sh .config/nvim/scripts :exclamation:
+
 :recycle:Use vi for start nvim:recycle:
 
 ### Install

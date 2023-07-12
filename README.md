@@ -46,19 +46,19 @@ rm lazygit.tar.gz lazygit
 ---
 
 ## Bottom install *tack manager*
-### Get last version
+#### Get last version
 ```
 BOTTOM_VERSION=$(curl -s "https://api.github.com/repos/ClementTsang/bottom/releases/latest" | grep -Po '"tag_name": "\K[0-9.]+')
 ```
-### Download
+#### Download
 ```
 curl -Lo bottom.deb "https://github.com/ClementTsang/bottom/releases/latest/download/bottom_${BOTTOM_VERSION}_amd64.deb"
 ```
-### Install
+#### Install
 ```
 sudo apt install -y ./bottom.deb
 ```
-### Remove install file
+#### Remove install file
 ```
 rm -rf bottom.deb
 ```
@@ -71,15 +71,15 @@ sudo apt -y install exa
 ---
 
 ## Fd install *change for find*
-### Download
+#### Download
 ```
 wget https://github.com/sharkdp/fd/releases/download/v7.3.0/fd-musl_7.3.0_amd64.deb
 ```
-### Install
+#### Install
 ```
 sudo apt install -y ./fd-musl_7.3.0_amd64.deb
 ```
-### Remove install file
+#### Remove install file
 ```
 rm -rf fd-musl_7.3.0_amd64.debb
 ```

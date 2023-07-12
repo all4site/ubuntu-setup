@@ -81,7 +81,7 @@ plugins=(git zsh-syntax-highlighting  zsh-autosuggestions)
 eval "$(zoxide init zsh)"
 source $ZSH/oh-my-zsh.sh
 
-bindkey '^ ' autosuggest-accept
+bindkey '^j' autosuggest-accept
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"

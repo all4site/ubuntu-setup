@@ -20,9 +20,21 @@
     - tar xf lazygit.tar.gz lazygit
 4. Build
     - sudo install lazygit /usr/local/bin
-
+5. Remove archive and bin file
+    - rm lazygit.tar.gz lazygit
+      
+## Bottom install
+1. Get last version
+    - BOTTOM_VERSION=$(curl -s "https://api.github.com/repos/ClementTsang/bottom/releases/latest" | grep -Po '"tag_name": "\K[0-9.]+')
+2. Download
+    - curl -Lo bottom.deb "https://github.com/ClementTsang/bottom/releases/latest/download/bottom_${BOTTOM_VERSION}_amd64.deb"
+3. Install
+    - sudo apt install -y ./bottom.deb
+4. Remove install file
+    - rm -rf bottom.deb
+      
 ##Need to install
-lazygit
+
 bottom
 fd
 tmux

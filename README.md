@@ -135,3 +135,14 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 :bangbang: To attach the last session use tm insted tmux :bangbang:
 
 ## Step three - neovim
+### Install
+```
+wget https://github.com/neovim/neovim/releases/download/stable/nvim.appimage && sudo apt install fuse
+```
+```
+sudo cp nvim.appimage /usr/bin/nvim && chmod u+x /usr/bin/nvim
+```
+### Get configuration
+```
+git clone git@github.com:all4site/myneovim.git ~/.config/nvim
+```

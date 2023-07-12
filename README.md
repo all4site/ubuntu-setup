@@ -36,11 +36,11 @@ curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/lates
 tar xf lazygit.tar.gz lazygit
 ```
 #### Build
-```bash
+```sh
 sudo install lazygit /usr/local/bin
 ```
 #### Remove archive and bin file
-```bash
+```sh
 rm lazygit.tar.gz lazygit
 ```
 ---

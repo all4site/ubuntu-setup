@@ -130,4 +130,4 @@ sudo apt install -y zoxide && exec zsh
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
-Press Ctr-a-U to update tmux configuration
+:exclamation: Press Ctr-a-U to update tmux configuration :exclamation:

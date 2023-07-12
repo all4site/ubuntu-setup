@@ -113,7 +113,7 @@ rm gdu_linux_amd64.tgz
 ## Step two - setting
 ### Copy ssh key :heavy_check_mark:
 ```bash
-chmod 600 ./ssh/id_rsa
+chmod 600 .ssh/id_rsa
 ```
 ### Clone git rep with setup :heavy_check_mark:
 ```bash

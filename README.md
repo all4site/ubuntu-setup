@@ -106,9 +106,15 @@ git clone git@github.com:all4site/ubuntu-setup.git temp
 cp temp/.zshrc .zshrc
 ```
 ### Install oh-my-zsh plugins
-##### 'powerlevel10k/powerlevel10k
+##### powerlevel10k/powerlevel10k
 ```
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k && exec zsh
 ```
-
+```
+ cp temp/.p10k.zsh .p10k.zsh && exec zsh
+```
+##### zsh-syntax-highlighting
+```
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting && exec zsh
+```
 

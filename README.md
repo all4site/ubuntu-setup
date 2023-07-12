@@ -2,7 +2,7 @@
 ---
 
 ## Update ubuntu
-```bash
+```console
 sudo apt update
 ```
 ```bash

@@ -125,7 +125,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ```
 sudo apt install -y zoxide && exec zsh
 ```
-### Tmux setup
+:heavy_check_mark: ### Tmux setup
 ##### Tmux Plugin Manager
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm

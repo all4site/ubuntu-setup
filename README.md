@@ -99,11 +99,11 @@ chmod 600 id_rsa
 ```
 ### Clone git rep with setup :heavy_check_mark:
 ```
-git clone git@github.com:all4site/ubuntu-setup.git temp
+git clone git@github.com:all4site/ubuntu-setup.git ~/.my-ubuntu-setup && chmod u+x removeallnvim.sh resetnvim.sh
 ```
 ### Copy zsh setup :heavy_check_mark:
 ```
-cp temp/.zshrc .zshrc
+cp ~/.my-ubuntu-setu/.zshrc .zshrc
 ```
 ### Install oh-my-zsh plugins :heavy_check_mark:
 ##### powerlevel10k/powerlevel10k
@@ -111,7 +111,7 @@ cp temp/.zshrc .zshrc
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k && exec zsh
 ```
 ```
- cp temp/.p10k.zsh .p10k.zsh && exec zsh
+ cp ~/.my-ubuntu-setu/.p10k.zsh .p10k.zsh && exec zsh
 ```
 ##### zsh-syntax-highlighting
 ```
@@ -130,7 +130,10 @@ sudo apt install -y zoxide && exec zsh
 :exclamation: Press Ctr-a+U and Ctr-a+I to update tmux configuration :exclamation:
 
 :bangbang: To attach the last session use tm insted tmux :bangbang:
-
+##### Copy Tmux config
+```
+cp ~/.my-ubuntu-setu/.tmux.conf ~/.tmux.conf
+```
 ##### Tmux Plugin Manager
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm

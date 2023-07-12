@@ -5,7 +5,7 @@
 ```console
 sudo apt update
 ```
-```bash
+```zsh
 sudo apt upgrage
 ```
 ---

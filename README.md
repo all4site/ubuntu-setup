@@ -135,6 +135,10 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 :bangbang: To attach the last session use tm insted tmux :bangbang:
 
 ## Step three - neovim
+:exclamation:If you need RESET nvim config use restnvim.sh in .config/nvim/scripts :exclamation:
+
+:exclamation:If you need REMOVE nvim config use removeallvim.sh .config/nvim/scripts :exclamation:
+
 ### Install
 ```
 wget https://github.com/neovim/neovim/releases/download/stable/nvim.appimage && sudo apt install fuse

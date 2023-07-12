@@ -5,42 +5,42 @@
 ```console
 sudo apt update
 ```
-```zsh
+```console
 sudo apt upgrage
 ```
 ---
 
 ## Zsh install
-```bash
+```console
 sudo apt install zsh -y
 ```
 ---
 
 ## Oh-my-zsh install
-```bash
+```console
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 ---
 
 ## Lazygit install *for git*
 #### Get last version 
-```bash
+```console
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
 ```
 #### Download
-```bash
+```console
 curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
 ```
 #### Unpack
-```bash
+```console
 tar xf lazygit.tar.gz lazygit
 ```
 #### Build
-```bash
+```console
 sudo install lazygit /usr/local/bin
 ```
 #### Remove archive and bin file
-```bash
+```console
 rm lazygit.tar.gz lazygit
 ```
 ---

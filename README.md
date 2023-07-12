@@ -63,7 +63,7 @@ rm -rf bottom.deb
 ```
 ---
 
-### Exa install *change for ls*
+### Exa install *change for ls* :heavy_check_mark:
 ```bash
 sudo apt -y install exa
 ```

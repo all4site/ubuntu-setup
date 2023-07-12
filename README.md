@@ -159,3 +159,7 @@ sudo cp nvim.appimage /usr/bin/nvim && chmod u+x /usr/bin/nvim
 ```bash
 git clone git@github.com:all4site/myneovim.git ~/.config/nvim
 ```
+### Codeium AI install
+```
+:Codeium Auth
+```

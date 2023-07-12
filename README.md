@@ -125,3 +125,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ```
 sudo apt install -y zoxide && exec zsh
 ```
+### Tmux setup
+##### Tmux Plugin Manager
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+Press Ctr-a-U to update tmux configuration

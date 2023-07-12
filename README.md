@@ -1,7 +1,6 @@
 # Ubuntu prepare environment
+## Step one - install packege
 ---
-# Step one - install packege
-
 ## Update ubuntu
 ```bash
 sudo apt update

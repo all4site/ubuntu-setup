@@ -36,6 +36,16 @@
 ## Exa install
 - sudo apt -y install exa
 
+## Fd install
+1. Get last version
+    - FD_VERSION=$(curl -s "https://api.github.com/repos/sharkdp/fd/releases/latest" | grep -Po '"tag_name": "v\K[0-9.]+')
+2. Download
+    - curl -Lo fd.deb "https://github.com/sharkdp/fd/releases/latest/download/fd_${FD_VERSION}_amd64.deb"
+3. Install
+    - sudo apt install -y ./fd.deb
+4. Remove install file
+    - rm -rf fd.deb
+      
 ##Need to install
 
 fd

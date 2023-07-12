@@ -1,6 +1,6 @@
 # Ubuntu prepare environment
 ## Step one - install packege
-### Update ubuntu
+### Update ubuntu :heavy_check_mark:
 ```bash
 sudo apt update
 ```
@@ -9,19 +9,19 @@ sudo apt upgrage
 ```
 ---
 
-### Zsh install
+### Zsh install :heavy_check_mark:
 ```bash
 sudo apt install zsh -y
 ```
 ---
 
-### Oh-my-zsh install
+### Oh-my-zsh install :heavy_check_mark:
 ```bash
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 ---
 
-### Lazygit install *for git*
+### Lazygit install *for git* :heavy_check_mark:
 ##### Get last version 
 ```bash
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
@@ -38,13 +38,13 @@ tar xf lazygit.tar.gz lazygit
 ```bash
 sudo install lazygit /usr/local/bin
 ```
-##### Remove archive and bin file
+##### Remove archive and bin file 
 ```bash
 rm lazygit.tar.gz lazygit
 ```
 ---
 
-### Bottom install *tack manager*
+### Bottom install *tack manager* :heavy_check_mark:
 ##### Get last version
 ```bash
 BOTTOM_VERSION=$(curl -s "https://api.github.com/repos/ClementTsang/bottom/releases/latest" | grep -Po '"tag_name": "\K[0-9.]+')
@@ -69,7 +69,7 @@ sudo apt -y install exa
 ```
 ---
 
-### Fd install *change for find*
+### Fd install *change for find* :heavy_check_mark:
 ##### Download
 ```bash
 wget https://github.com/sharkdp/fd/releases/download/v7.3.0/fd-musl_7.3.0_amd64.deb
@@ -78,34 +78,34 @@ wget https://github.com/sharkdp/fd/releases/download/v7.3.0/fd-musl_7.3.0_amd64.
 ```bash
 sudo apt install -y ./fd-musl_7.3.0_amd64.deb
 ```
-##### Remove install file
+##### Remove install file 
 ```bash
 rm -rf fd-musl_7.3.0_amd64.debb
 ```
 ---
 
-### Tmux install
+### Tmux install :heavy_check_mark:
 ```bash
 sudo apt install tmux
 ```
 
 ## Step two - setting
-### Copy ssh key
+### Copy ssh key :heavy_check_mark:
 ```
 cd .ssh
 ```
 ```
 chmod 600 id_rsa
 ```
-### Clone git rep with setup
+### Clone git rep with setup :heavy_check_mark:
 ```
 git clone git@github.com:all4site/ubuntu-setup.git temp
 ```
-### Copy zsh setup
+### Copy zsh setup :heavy_check_mark:
 ```
 cp temp/.zshrc .zshrc
 ```
-### Install oh-my-zsh plugins
+### Install oh-my-zsh plugins :heavy_check_mark:
 ##### powerlevel10k/powerlevel10k
 ```
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k && exec zsh

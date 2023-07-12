@@ -147,7 +147,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ### Install
 ```
-wget https://github.com/neovim/neovim/releases/download/stable/nvim.appimage && sudo apt install fuse
+wget https://github.com/neovim/neovim/releases/download/stable/nvim.appimage && sudo apt install fuse gcc ripgrep
 ```
 ```
 sudo cp nvim.appimage /usr/bin/nvim && chmod u+x /usr/bin/nvim

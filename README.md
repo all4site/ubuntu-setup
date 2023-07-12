@@ -1,12 +1,13 @@
 # Ubuntu prepare environment
 ---
-```
-     test
-```
 
 ## Update ubuntu
-- sudo apt update
-- sudo apt upgrage
+```
+     sudo apt update
+```
+```
+sudo apt upgrage
+```
 ---
 
 ## Zsh install

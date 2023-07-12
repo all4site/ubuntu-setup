@@ -28,19 +28,19 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
 ```
 #### Download
-```
+```bash
 curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
 ```
 #### Unpack
-```
+```bash
 tar xf lazygit.tar.gz lazygit
 ```
 #### Build
-```
+```bash
 sudo install lazygit /usr/local/bin
 ```
 #### Remove archive and bin file
-```
+```bash
 rm lazygit.tar.gz lazygit
 ```
 ---

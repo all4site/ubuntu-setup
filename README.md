@@ -1,4 +1,4 @@
-# ubuntu-setup
+# Ubuntu prepare environment
 
 
 ## Update ubuntu
@@ -32,9 +32,11 @@
     - sudo apt install -y ./bottom.deb
 4. Remove install file
     - rm -rf bottom.deb
-      
+
+## Exa install
+- sudo apt -y install exa
+
 ##Need to install
 
-bottom
 fd
 tmux

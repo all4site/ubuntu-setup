@@ -112,6 +112,8 @@ alias cl='clear'
 alias tm='tmux attach'
 alias ls='exa -lag --icons'
 alias rel='exec zsh'
+alias vireset='~/.my-ubuntu-setu/restnvim.sh'
+alias videlete='~/.my-ubuntu-setu/removeallvim.sh'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 

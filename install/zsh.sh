@@ -1,2 +1,2 @@
- sudo apt install zsh -y &&
-     cp ../.zshrc ~/.zshrc
+#!/usr/bin/env bash
+sudo apt install zsh -y

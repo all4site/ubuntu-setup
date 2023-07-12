@@ -126,15 +126,19 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 sudo apt install -y zoxide && exec zsh
 ```
 ### Tmux setup :heavy_check_mark:
-##### Tmux Plugin Manager
-```
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-```
+
 :exclamation: Press Ctr-a+U and Ctr-a+I to update tmux configuration :exclamation:
 
 :bangbang: To attach the last session use tm insted tmux :bangbang:
 
+##### Tmux Plugin Manager
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+
 ## Step three - neovim
+
 :exclamation:If you need RESET nvim config use restnvim.sh in .config/nvim/scripts :exclamation:
 
 :exclamation:If you need REMOVE nvim config use removeallvim.sh .config/nvim/scripts :exclamation:

@@ -1,6 +1,6 @@
 # Ubuntu prepare environment
 ## Step one - install packege
-## Update ubuntu
+### Update ubuntu
 ```bash
 sudo apt update
 ```
@@ -9,36 +9,36 @@ sudo apt upgrage
 ```
 ---
 
-## Zsh install
+### Zsh install
 ```bash
 sudo apt install zsh -y
 ```
 ---
 
-## Oh-my-zsh install
+### Oh-my-zsh install
 ```bash
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 ---
 
-## Lazygit install *for git*
-#### Get last version 
+### Lazygit install *for git*
+##### Get last version 
 ```bash
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
 ```
-#### Download
+##### Download
 ```bash
 curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
 ```
-#### Unpack
+##### Unpack
 ```bash
 tar xf lazygit.tar.gz lazygit
 ```
-#### Build
+##### Build
 ```bash
 sudo install lazygit /usr/local/bin
 ```
-#### Remove archive and bin file
+##### Remove archive and bin file
 ```bash
 rm lazygit.tar.gz lazygit
 ```

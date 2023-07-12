@@ -88,6 +88,27 @@ rm -rf fd-musl_7.3.0_amd64.debb
 ```bash
 sudo apt install tmux
 ```
+### Gdu install *disk usage util* :heavy_check_mark:
+##### Download
+```
+wget https://github.com/dundee/gdu/releases/latest/download/gdu_linux_amd64.tgz
+```
+##### Unpacking
+```
+tar xzf gdu_linux_amd64.tgz
+```
+##### Executable
+```
+sudo chmod +x gdu_linux_amd64
+```
+##### Move to bin
+```
+sudo mv gdu_linux_amd64 /usr/bin/gdu
+```
+##### Rrmove archive
+```
+rm gdu_linux_amd64.tgz
+```
 
 ## Step two - setting
 ### Copy ssh key :heavy_check_mark:

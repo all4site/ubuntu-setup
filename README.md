@@ -16,7 +16,7 @@
 
 ---
 
-## Lazygit install for git
+## Lazygit install *for git*
 1. Get last version
     - LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
 2. Download
@@ -30,7 +30,7 @@
 
 ---
 
-## Bottom install tack manager
+## Bottom install *tack manager*
 1. Get last version
     - BOTTOM_VERSION=$(curl -s "https://api.github.com/repos/ClementTsang/bottom/releases/latest" | grep -Po '"tag_name": "\K[0-9.]+')
 2. Download
@@ -42,12 +42,12 @@
 
 ---
 
-## Exa install change for ls
+## Exa install *change for ls*
 - sudo apt -y install exa
 
 ---
 
-## Fd install change for find
+## Fd install *change for find*
 1. Download
     -  wget https://github.com/sharkdp/fd/releases/download/v7.3.0/fd-musl_7.3.0_amd64.deb
 2. Install

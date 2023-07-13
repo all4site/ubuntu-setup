@@ -6,7 +6,9 @@ echo "${Green}Installing...${NC}"
 git clone https://github.com/all4site/ubuntu-setup.git &&
 	cd ubuntu-setup/install &&
 	chmod +x *.sh &&
+	mkdir -p ~/.config &&
 	./install.sh &&
+	cd ~ &&
 	rm -rf ubuntu-setup &&
 	sudo chsh -s $(which zsh) &&
 	exec zsh

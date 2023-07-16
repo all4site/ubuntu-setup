@@ -9,6 +9,6 @@ git clone https://github.com/all4site/ubuntu-setup.git &&
 	mkdir -p ~/.config &&
 	./install.sh &&
 	cd ~ &&
-	rm -rf ubuntu-setup &&
-	# chsh -s $(which zsh) &&
-	# exec zsh
+	rm -rf ubuntu-setup
+# chsh -s $(which zsh) &&
+# exec zsh

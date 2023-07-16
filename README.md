@@ -1,5 +1,9 @@
 # Ubuntu prepare environment
 ## Short way
+### Create wsl user default
+```
+echo [user]$'\n'default=kirill >> /etc/wsl.conf
+```
 ```
 wget https://raw.githubusercontent.com/all4site/ubuntu-setup/main/install.sh && chmod +x install.sh && ./install.sh
 ```

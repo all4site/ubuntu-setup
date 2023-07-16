@@ -11,6 +11,6 @@ git clone https://github.com/all4site/ubuntu-setup.git &&
 	cp ../.p10k.zsh ~/ &&
 	./install.sh &&
 	cd ~/ &&
-	rm -rf ubuntu-setup
-# chsh -s $(which zsh) &&
-# exec zsh
+	rm -rf ubuntu-setup &&
+	chsh -s $(which zsh) &&
+	exec zsh

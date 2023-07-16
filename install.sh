@@ -7,7 +7,6 @@ git clone https://github.com/all4site/ubuntu-setup.git &&
 	cd ubuntu-setup/install &&
 	chmod +x *.sh &&
 	mkdir -p ~/.config &&
-	cp ../.p10k.zsh ~/ &&
 	./install.sh &&
 	cd ~/ &&
 	rm -rf ubuntu-setup &&

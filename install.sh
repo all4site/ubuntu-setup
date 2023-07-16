@@ -10,5 +10,5 @@ git clone https://github.com/all4site/ubuntu-setup.git &&
 	./install.sh &&
 	cd ~ &&
 	rm -rf ubuntu-setup &&
-	chsh -s $(which zsh) &&
-	exec zsh
+	# chsh -s $(which zsh) &&
+	# exec zsh

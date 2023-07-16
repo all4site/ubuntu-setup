@@ -1,7 +1,7 @@
 # Ubuntu prepare environment
 ## Short way
 ```
-wget https://raw.githubusercontent.com/all4site/ubuntu-setup/main/install.sh && chmod +x install.sh && sudo ./install.sh
+wget https://raw.githubusercontent.com/all4site/ubuntu-setup/main/install.sh && chmod +x install.sh && ./install.sh
 ```
 ## Step one - install packege
 ### Update ubuntu :heavy_check_mark:

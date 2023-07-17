@@ -6,8 +6,8 @@ echo -e "${Green}Updating...${NC}"
 source update.sh
 echo -e "${Green}Installing lazygit...${NC}"
 source lazygit.sh
-# echo -e "${Green}Installing node...${NC}"
-# source node.sh
+echo -e "${Green}Installing node...${NC}"
+source node.sh
 echo -e "${Green}Installing buttom...${NC}"
 source bottom.sh
 echo -e "${Green}Installing exa...${NC}"

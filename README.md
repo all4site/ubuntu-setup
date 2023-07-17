@@ -7,6 +7,9 @@ echo [user]$'\n'default=kirill >> /etc/wsl.conf
 ```
 wget https://raw.githubusercontent.com/all4site/ubuntu-setup/main/install.sh && chmod +x install.sh && ./install.sh
 ```
+```
+nvm install 18
+```
 ## Step one - install packege
 ### Update ubuntu :heavy_check_mark:
 ```bash

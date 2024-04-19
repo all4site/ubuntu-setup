@@ -1,5 +1,9 @@
 # Ubuntu prepare environment
 ## Short way
+### Create wsl default login user (in windows)
+```
+wsl --distribution ubuntu -u user_name
+```
 ### Create wsl user default
 ```
 echo [user]$'\n'default=kirill >> /etc/wsl.conf

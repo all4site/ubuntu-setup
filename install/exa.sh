@@ -1,1 +1,1 @@
-sudo apt -y install exa
+sudo apt -y install eza

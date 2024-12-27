@@ -64,21 +64,17 @@ rm lazygit.tar.gz lazygit
 ---
 
 ### Bottom install *tack manager* :heavy_check_mark:
-##### Get last version
-```bash
-BOTTOM_VERSION=$(curl -s "https://api.github.com/repos/ClementTsang/bottom/releases/latest" | grep -Po '"tag_name": "\K[0-9.]+')
-```
 ##### Download
 ```bash
-curl -Lo bottom.deb "https://github.com/ClementTsang/bottom/releases/latest/download/bottom_${BOTTOM_VERSION}_amd64.deb"
+curl -LO https://github.com/ClementTsang/bottom/releases/download/0.10.2/bottom_0.10.2-1_amd64.deb
 ```
 ##### Install
 ```bash
-sudo apt install -y ./bottom.deb
+sudo dpkg -i bottom_0.10.2-1_amd64.deb
 ```
 ##### Remove install file
 ```bash
-rm -rf bottom.deb
+rm -rf bottom_0.10.2-1_amd64.deb
 ```
 ---
 

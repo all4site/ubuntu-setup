@@ -10,10 +10,6 @@ wsl --unregister coco
 ```
 wsl --import coco E:\coco E:\ubunut-clear\ubuntu-24-04
 ```
-### Create wsl default login user (in windows) optional
-```
-wsl --distribution ubuntu -u user_name
-```
 ### Create wsl user default
 ```
 echo [user]$'\n'default=kiril >> /etc/wsl.conf

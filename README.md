@@ -1,6 +1,6 @@
 # Ubuntu prepare environment
 ## Short way
-### Create wsl default login user (in windows)
+### Create wsl default login user (in windows) optional
 ```
 wsl --distribution ubuntu -u user_name
 ```

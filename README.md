@@ -1,5 +1,15 @@
 # Ubuntu prepare environment
 ## Short way
+### Create new wsl image
+```
+wsl --shutdown
+```
+```
+wsl --unregister coco
+```
+```
+wsl --import coco E:\coco E:\ubunut-clear\ubuntu-24-04
+```
 ### Create wsl default login user (in windows) optional
 ```
 wsl --distribution ubuntu -u user_name

@@ -6,7 +6,7 @@ wsl --distribution ubuntu -u user_name
 ```
 ### Create wsl user default
 ```
-echo [user]$'\n'default=kirill >> /etc/wsl.conf
+echo [user]$'\n'default=kiril >> /etc/wsl.conf
 ```
 ### Иначе пользователь по умолчанию не поменяется
 ```

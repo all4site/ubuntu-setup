@@ -25,6 +25,7 @@ sudo apt update
 ```
 ```bash
 sudo apt upgrage
+sudo apt install unzip
 ```
 ---
 

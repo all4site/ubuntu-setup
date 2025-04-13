@@ -107,13 +107,22 @@ bindkey '^j' autosuggest-accept
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#alias for development
+alias dev='npm run dev'
+alias front='pm2 logs front-dev --lines 1000'
+alias back='pm2 logs back-dev --lines 1000'
+alias start='npm run start:dev'
+
+#alias for other
 alias vi='nvim'
 alias cl='clear'
 alias tm='tmux attach'
 alias ls='exa -lag --icons'
 alias rel='exec zsh'
+alias cm='./createModule.sh'
 alias vireload='rm -rf ~/.local/share/nvim && rm -rf ~/.local/state/nvim && rm -rf ~/.cache/nvim'
 alias videlete='rm -rf ~/.config/nvim/ && rm -rf ~/.local/share/nvim && rm -rf ~/.local/state/nvim && rm -rf ~/.cache/nvim'
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 

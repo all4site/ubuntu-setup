@@ -108,10 +108,8 @@ bindkey '^j' autosuggest-accept
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #alias for development
-alias dev='npm run dev'
 alias front='pm2 flush front-dev && pm2 logs front-dev --lines 1000'
 alias back='pm2 flush back-dev && pm2 logs back-dev --lines 1000'
-alias start='npm run start:dev'
 
 #alias for other
 alias vi='nvim'

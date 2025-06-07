@@ -20,6 +20,8 @@ echo -e "${Green}Installing gdu...${NC}"
 source gdu.sh
 echo -e "${Green}Installing zoxide...${NC}"
 source zoxide.sh
+echo -e "${Green}Installing docker...${NC}"
+source docker.sh
 echo -e "${Green}Installing neovim...${NC}"
 source neovim.sh
 echo -e "${Green}Installing zsh...${NC}"

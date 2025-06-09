@@ -18,7 +18,7 @@ echo [user]$'\n'default=kiril >> /etc/wsl.conf
 ```
 wsl --shutdown
 ```
-:exclamation: ### Обязательно надо проверить время :exclamation:
+###:exclamation:Обязательно надо проверить время :exclamation:
 ```
 timedatectl
 ```
@@ -30,11 +30,11 @@ sudo timedatectl set-timezone Europe/Kyiv
 ```
 wget https://raw.githubusercontent.com/all4site/ubuntu-setup/main/install.sh && chmod +x install.sh && ./install.sh
 ```
-:exclamation: ### Обязательно надо поставить Node иначе не будет работать neovim :exclamation:
+###:exclamation:  Обязательно надо поставить Node иначе не будет работать neovim :exclamation:
 ```
 nvm install 22
 ```
- ### :exclamation: Важно следить за размерами диска docker много жрет!!! :exclamation:
+ ###:exclamation: Важно следить за размерами диска docker много жрет!!! :exclamation:
 ```
 Optimize-VHD -Path "E:\coco-docker\ext4.vhdx" -Mode Full
 ```

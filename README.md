@@ -34,6 +34,18 @@ wget https://raw.githubusercontent.com/all4site/ubuntu-setup/main/install.sh && 
 ```
 nvm install 22
 ```
+:exclamation: ### Важно следить за размерами диска docker много жрет!!! :exclamation:
+```
+Optimize-VHD -Path "E:\coco-docker\ext4.vhdx" -Mode Full
+```
+#### В самом docker
+```
+docker system df -v
+```
+```
+docker builder prune
+```
+
 ## Step one - install packege
 ### Update ubuntu :heavy_check_mark:
 ```bash

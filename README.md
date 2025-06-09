@@ -26,7 +26,7 @@ timedatectl
 ```
 sudo timedatectl set-timezone Europe/Kyiv
 ```
-
+### Далее запускаме автоустанощик
 ```
 wget https://raw.githubusercontent.com/all4site/ubuntu-setup/main/install.sh && chmod +x install.sh && ./install.sh
 ```

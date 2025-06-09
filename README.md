@@ -18,7 +18,16 @@ echo [user]$'\n'default=kiril >> /etc/wsl.conf
 ```
 wsl --shutdown
 ```
-```bash
+:exclamation: ### Обязательно надо проверить время :exclamation:
+```
+timedatectl
+```
+#### Если не правильное поменять
+```
+sudo timedatectl set-timezone Europe/Kyiv
+```
+
+```
 wget https://raw.githubusercontent.com/all4site/ubuntu-setup/main/install.sh && chmod +x install.sh && ./install.sh
 ```
 ```

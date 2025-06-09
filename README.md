@@ -42,10 +42,14 @@ Optimize-VHD -Path "E:\coco-docker\ext4.vhdx" -Mode Full
 ```
 docker system df -v
 ```
+##### Удаляем весь кеш
 ```
 docker builder prune --all -f
 ```
-
+##### Удаляем висячие образы (мусор)
+```
+docker image prune
+```
 ## Step one - install packege
 ### Update ubuntu :heavy_check_mark:
 ```bash

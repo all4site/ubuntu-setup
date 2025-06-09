@@ -30,8 +30,9 @@ sudo timedatectl set-timezone Europe/Kyiv
 ```
 wget https://raw.githubusercontent.com/all4site/ubuntu-setup/main/install.sh && chmod +x install.sh && ./install.sh
 ```
+:exclamation: ### Обязательно надо поставить Node иначе не будет работать neovim :exclamation:
 ```
-nvm install 18
+nvm install 22
 ```
 ## Step one - install packege
 ### Update ubuntu :heavy_check_mark:

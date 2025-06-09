@@ -18,6 +18,10 @@ echo [user]$'\n'default=kiril >> /etc/wsl.conf
 ```
 wsl --shutdown
 ```
+### Далее запускаме автоустанощик
+```
+wget https://raw.githubusercontent.com/all4site/ubuntu-setup/main/install.sh && chmod +x install.sh && ./install.sh
+```
 ### :exclamation:Обязательно надо проверить время :exclamation:
 ```
 timedatectl
@@ -25,10 +29,6 @@ timedatectl
 #### Если не правильное поменять
 ```
 sudo timedatectl set-timezone Europe/Kyiv
-```
-### Далее запускаме автоустанощик
-```
-wget https://raw.githubusercontent.com/all4site/ubuntu-setup/main/install.sh && chmod +x install.sh && ./install.sh
 ```
 ### exclamation:  Обязательно надо поставить Node иначе не будет работать neovim :exclamation:
 ```

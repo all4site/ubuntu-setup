@@ -20,7 +20,7 @@ wsl --shutdown
 ```
 ### Далее запускаме автоустанощик
 ```
-wget https://raw.githubusercontent.com/all4site/ubuntu-setup/main/install.sh && chmod +x install.sh && ./install.sh >/dev/null 2>&1
+wget https://raw.githubusercontent.com/all4site/ubuntu-setup/main/install.sh >/dev/null 2>&1 && chmod +x install.sh && ./install.sh 
 ```
 ### :exclamation: Обязательно надо проверить время :exclamation:
 ```

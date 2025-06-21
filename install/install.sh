@@ -4,6 +4,16 @@ Green='\033[0;32m'
 Red='\033[0;31m'
 NC='\033[0m'
 
+# 🔐 Проверка sudo и продление таймера
+echo -e "${Green}Checking sudo permissions...${NC}"
+sudo -v
+# Обновление sudo-пароля в фоне
+while true; do
+  sleep 60
+  sudo -n true 2>/dev/null || exit
+done & disown
+
+# 🔄 Спиннер
 spinner() {
   local pid=$1
   local delay=0.3

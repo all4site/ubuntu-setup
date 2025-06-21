@@ -8,7 +8,7 @@ wsl --shutdown
 wsl --unregister coco
 ```
 ```
-wsl --import coco E:\coco E:\ubuntu-iso\ubuntu-24-04
+wsl --import coco E:\coco E:\ubuntu-iso\ubuntu-24-04.tar
 ```
 ### Create wsl user default
 ```

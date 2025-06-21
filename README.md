@@ -30,7 +30,7 @@ timedatectl
 ```
 sudo timedatectl set-timezone Europe/Kyiv
 ```
-### exclamation:  Обязательно надо поставить Node иначе не будет работать neovim :exclamation:
+### exclamation:Обязательно надо поставить Node иначе не будет работать neovim :exclamation:
 ```
 nvm install 22
 ```

@@ -10,6 +10,8 @@ git clone https://github.com/all4site/ubuntu-setup.git > /dev/null 2>&1 &&
 	source install.sh &&
 	cd ~/ > /dev/null 2>&1 &&
 	rm -rf ubuntu-setup > /dev/null 2>&1 &&
-	sudo chsh -s $(which zsh) > /dev/null 2>&1 &&
-	exec zsh > /dev/null 2>&1 &&
-echo "${Green}Install completed...${NC}"
+	sudo chsh -s $(which zsh) > /dev/null 2>&1
+ 
+	 echo -e "${Green}Install completed. Launching Zsh...${NC}"
+	exec zsh > /dev/null 2>&1
+

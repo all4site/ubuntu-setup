@@ -33,7 +33,7 @@ rm -rf ubuntu-setup
 
 # Меняем оболочку на zsh
 if command -v zsh >/dev/null 2>&1; then
-  sudo chsh -s "$(which zsh)"
+  chsh -s "$(which zsh)"
 else
   echo -e "${Red}Zsh is not installed. Skipping shell change.${NC}"
 fi

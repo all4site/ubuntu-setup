@@ -22,7 +22,7 @@ wsl --shutdown
 ```
 wget https://raw.githubusercontent.com/all4site/ubuntu-setup/main/install.sh && chmod +x install.sh && ./install.sh
 ```
-### :exclamation:Обязательно надо проверить время :exclamation:
+### :exclamation: Обязательно надо проверить время :exclamation:
 ```
 timedatectl
 ```
@@ -30,7 +30,7 @@ timedatectl
 ```
 sudo timedatectl set-timezone Europe/Kyiv
 ```
-### exclamation:Обязательно надо поставить Node иначе не будет работать neovim :exclamation:
+### :exclamation: Обязательно надо поставить Node иначе не будет работать neovim :exclamation:
 ```
 nvm install 22
 ```

@@ -2,7 +2,7 @@
 Green='\033[0;32m'
 NC='\033[0m'
 
-echo "${Green}Installing...${NC}"
+echo -e "${Green}Installing...${NC}"
 git clone https://github.com/all4site/ubuntu-setup.git > /dev/null 2>&1 &&
 	cd ubuntu-setup/install > /dev/null 2>&1 &&
 	chmod +x *.sh  > /dev/null 2>&1 &&

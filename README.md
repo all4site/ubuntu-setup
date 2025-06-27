@@ -38,125 +38,6 @@ nvm install 22
 ```
 Optimize-VHD -Path "E:\coco-docker\ext4.vhdx" -Mode Full
 ```
-#### В самом docker
-```
-docker system df -v
-```
-##### Удаляем весь кеш
-```
-docker builder prune --all -f
-```
-##### Удаляем висячие образы (мусор)
-```
-docker image prune
-```
-## Step one - install packege
-### Update ubuntu :heavy_check_mark:
-```bash
-sudo apt update
-```
-```bash
-sudo apt upgrage
-sudo apt install unzip
-```
----
-
-### Zsh install :heavy_check_mark:
-```bash
-sudo apt install zsh -y
-```
----
-
-### Oh-my-zsh install :heavy_check_mark:
-```bash
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-```
----
-
-### Lazygit install *for git* :heavy_check_mark:
-##### Get last version 
-```bash
-LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
-```
-##### Download
-```bash
-curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
-```
-##### Unpack
-```bash
-tar xf lazygit.tar.gz lazygit
-```
-##### Build
-```bash
-sudo install lazygit /usr/local/bin
-```
-##### Remove archive and bin file 
-```bash
-rm lazygit.tar.gz lazygit
-```
----
-
-### Bottom install *tack manager* :heavy_check_mark:
-##### Download
-```bash
-curl -LO https://github.com/ClementTsang/bottom/releases/download/0.10.2/bottom_0.10.2-1_amd64.deb
-```
-##### Install
-```bash
-sudo dpkg -i bottom_0.10.2-1_amd64.deb
-```
-##### Remove install file
-```bash
-rm -rf bottom_0.10.2-1_amd64.deb
-```
----
-
-### Exa install *change for ls* :heavy_check_mark:
-```bash
-sudo apt -y install exa
-```
----
-
-### Fd install *change for find* :heavy_check_mark:
-##### Download
-```bash
-wget https://github.com/sharkdp/fd/releases/download/v7.3.0/fd-musl_7.3.0_amd64.deb
-```
-##### Install
-```bash
-sudo apt install -y ./fd-musl_7.3.0_amd64.deb
-```
-##### Remove install file 
-```bash
-rm -rf fd-musl_7.3.0_amd64.debb
-```
----
-
-### Tmux install :heavy_check_mark:
-```bash
-sudo apt install tmux
-```
-### Gdu install *disk usage util* :heavy_check_mark:
-##### Download
-```
-wget https://github.com/dundee/gdu/releases/latest/download/gdu_linux_amd64.tgz
-```
-##### Unpacking
-```
-tar xzf gdu_linux_amd64.tgz
-```
-##### Executable
-```
-sudo chmod +x gdu_linux_amd64
-```
-##### Move to bin
-```
-sudo mv gdu_linux_amd64 /usr/bin/gdu
-```
-##### Rrmove archive
-```
-rm gdu_linux_amd64.tgz
-```
 
 ## Step two - setting
 ### Copy ssh key :heavy_check_mark:
@@ -206,25 +87,12 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
 
-## Step three - neovim
+## Neovim
 
 :exclamation:If you need RESET nvim config use restnvim.sh in ~/.my-ubuntu-setu :exclamation:
 
 :exclamation:If you need REMOVE nvim config use removeallvim.sh ~/.my-ubuntu-setu :exclamation:
 
-:recycle:Use vi for start nvim:recycle:
-
-### Install
-```bash
-wget https://github.com/neovim/neovim/releases/download/stable/nvim.appimage && sudo apt install fuse gcc ripgrep
-```
-```bash
-sudo cp nvim.appimage /usr/bin/nvim && chmod u+x /usr/bin/nvim
-```
-### Get configuration
-```bash
-git clone git@github.com:all4site/myneovim.git ~/.config/nvim
-```
 ### Codeium AI install
 ```
 :Codeium Auth

@@ -1,1 +1,3 @@
-sudo apt update -y && sudo apt upgrade -y && sudo apt install unzip build-essential curl jq -y
+sudo apt update -y -qq
+sudo apt upgrade -y -qq
+sudo apt install unzip build-essential curl jq dialog -y -qq

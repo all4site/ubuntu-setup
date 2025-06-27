@@ -6,8 +6,8 @@ echo "deb [signed-by=/etc/apt/keyrings/mongodb.gpg arch=amd64] \
   https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 multiverse" | \
   sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list > /dev/null
 
-sudo apt-get update -qq
-sudo apt-get install -y -qq mongodb-atlas-cli
+sudo apt update -qq
+sudo apt install -y -qq mongodb-atlas-cli mongodb-mongosh
 
 wget -q https://fastdl.mongodb.org/tools/db/mongodb-database-tools-ubuntu2404-x86_64-100.12.2.deb -O /tmp/mongodb-tools.deb
 

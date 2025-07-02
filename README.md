@@ -23,9 +23,6 @@ wsl --shutdown
 wget https://raw.githubusercontent.com/all4site/ubuntu-setup/main/install.sh >/dev/null 2>&1 && chmod +x install.sh && ./install.sh 
 ```
 ### :exclamation: Обязательно надо проверить время :exclamation:
-```
-timedatectl
-```
 #### Если не правильное поменять
 ```
 sudo timedatectl set-timezone Europe/Kyiv

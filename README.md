@@ -30,10 +30,6 @@ timedatectl
 ```
 sudo timedatectl set-timezone Europe/Kyiv
 ```
-### :exclamation: Обязательно надо поставить Node иначе не будет работать neovim :exclamation:
-```
-nvm install 22
-```
  ### :exclamation: Важно следить за размерами диска docker много жрет!!! :exclamation:
 ```
 Optimize-VHD -Path "E:\coco-docker\ext4.vhdx" -Mode Full
